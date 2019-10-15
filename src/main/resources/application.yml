@@ -1,0 +1,27 @@
+spring:
+    http:
+        encoding:
+            charset: UTF-8
+            enabled: true
+            force: true        
+            force-request: true
+            force-response: true
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+    output:
+        ansi:
+            enabled: always
+server:
+    port: 8080
+    servlet:
+        context-path: /srg
+        session:
+            timeout: 1500
+    tomcat:
+        uri-encoding: UTF-8
+    error:
+        path: '/error'
+        whitelabel:
+            enabled: false

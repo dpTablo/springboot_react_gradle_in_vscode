@@ -1,0 +1,30 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.9.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+	id 'war'
+}
+
+group = 'dptablo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.27'
+
+	implementation 'org.springframework.boot:spring-boot-starter:2.1.9.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.1.9.RELEASE'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:2.1.9.RELEASE'
+
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools:2.1.9.RELEASE'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.9.RELEASE'
+}
+
+war {
+	baseName 'springboot_react_gradle_in_vscode'
+	archiveName '${baseName}.${extension}'
+}
