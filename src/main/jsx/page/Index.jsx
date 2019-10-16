@@ -12,7 +12,7 @@ class Index extends React.Component {
     render() { 
         return (
             <div className="index">
-                <h1>Index.jsx 에 의해 렌더링된 페이지1234</h1>
+                <h1>Index.jsx 에 의해 렌더링된 페이지123</h1>
             </div>
         )
     }

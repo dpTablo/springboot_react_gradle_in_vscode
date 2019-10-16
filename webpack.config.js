@@ -1,7 +1,4 @@
 const path = require("path");
-const webpackMerge = require('webpack-merge');
-const devConfig = require('./webpack.dev.config.js');
-const target = process.env.npm_lifecycle_event;
 
 module.exports = {
     mode: 'production',
