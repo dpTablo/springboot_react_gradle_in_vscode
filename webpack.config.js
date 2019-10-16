@@ -37,14 +37,3 @@ module.exports = {
         ]
     }
 }
-
-// var config;
-// if(target === 'prod') {
-//     console.log('real build');
-//     config = webpackMerge(common, prodConfig);
-// } else {
-//     console.log('dev build');
-//     config = webpackMerge(common, devConfig);
-// }
-
-// module.exports = config;

@@ -1,0 +1,4 @@
+react:
+  webpackDevServer:
+    host: localhost
+    port: 3000
