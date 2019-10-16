@@ -15,7 +15,7 @@ Spring Boot, React, Gradle 을 사용하여 프로젝트를 구성하고 vscode 
 
 # Running
 
-VSCode의 launch.json 의 Run DemoApplication 실행
+VSCode의 launch.json 의 Run DemoApplication 실행.
 
 http://localhost:8080/srg/index.html -> index.html 
 http://localhost:8080/srg/page/hello -> jsp
@@ -24,12 +24,18 @@ http://localhost:8080/srg/page/react/index -> react
 
 # Development
 
-(1) VSCode의 launch.json 의 Debug DemoApplication 실행
+(1) VSCode의 launch.json 의 Debug DemoApplication 실행.
 
-(2) VSCode의 New Terminal Open 후 
+(2) VSCode의 New Terminal Open 후 webpack-dev-server 구동. 아래 명령 실행.
 
     npm run dev
 
+
+# Debugging
+
+Server Side (Spring java) 에 대한 debugging 은 vscode 안에서 java 파일에 break point를 설정하고 debug view 에서 확인할 수 있습니다.
+
+Client Side (React JSX) 에 대한 Debugging 은 위의 'Development' 부분과 같이 실행하고 chrome 에 'react developer tool' extension 을 설치하여 할 수 있습니다.
 
 
 
